@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Debug */
+.dev {
+    border: 1px solid palevioletred;
+}
+
+/* Background */
+body {
+    background: url("../imgs/bg3.png") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    background: #292929;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #464646;
+    border-radius: 5px;
+}
+
+/* Content */
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+#hero h2 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+/* Skill Section */
+
+#skills {
+    background-color: #292929;
+    padding: 50px;
+}
+
+#skills .title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+}
