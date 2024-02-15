@@ -57,7 +57,10 @@ body {
 /* Whole Content Section */
 
 #content {
-    padding: 50px 350px 70px 350px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+
     background-color: #292929;
     border-top: 4px solid #1f1f1f;
     border-bottom: 4px solid #1f1f1f;
@@ -76,13 +79,14 @@ body {
 /* Reusable Elements */
 
 /* Grid */
-.container {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
 }
 
 /* Skill Section */
+
 #skills .panel {
     grid-area: 1;
     background-color: #333333;
@@ -125,7 +129,6 @@ footer .contact {
 footer .contact .panel {
     background-color: #464646;
     border-radius: 15px;
-    width: 40%;
 }
 
 footer .info {
@@ -151,3 +154,15 @@ footer .icons a:hover {
 }
 
 /* Responsive */
+
+#content .container {
+    width: 75%;
+}
+
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+    #content .container {
+        width: 90%;
+    }
+}
