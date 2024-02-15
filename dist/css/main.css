@@ -33,6 +33,7 @@ body {
 /* Content */
 main {
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 /* Hero Section */
@@ -55,19 +56,55 @@ main {
     font-size: 35px;
 }
 
-/* Skill Section */
+/* Whole Content Section */
 
-#skills {
+#content {
+    padding: 50px 350px 50px 350px;
     background-color: #292929;
-    padding: 50px;
 }
 
-#skills .title {
+#content .sectionTitle {
     text-align: center;
-    color: white;
+    margin-bottom: 50px;
 }
 
-#skills .title h1 {
+#content .sectionTitle h1 {
     font-size: 50px;
     font-weight: 300;
 }
+
+/* Reusable Elements */
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+/* Skill Section */
+
+#skills .panel {
+    grid-area: 1;
+    background-color: #464646;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#skills .panel .header {
+    background: url("../imgs/panelHeaderBG.png");
+    padding: 15px;
+    margin: -40px 0px 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#skills .panel .header h1 {font-size: 25px; font-weight: 400;}
+
+#skills .panel .content {
+
+}
+
+/* Responsive */
