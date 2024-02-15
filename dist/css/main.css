@@ -12,11 +12,15 @@
 
 /* Background */
 body {
-    background: url("../imgs/bg3.png") no-repeat center top fixed;
+    background: url("../imgs/backgrounds/bg4.png") no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 /* Scrollbar */
@@ -28,12 +32,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #464646;
     border-radius: 5px;
-}
-
-/* Content */
-main {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
 }
 
 /* Hero Section */
@@ -59,8 +57,10 @@ main {
 /* Whole Content Section */
 
 #content {
-    padding: 50px 350px 50px 350px;
+    padding: 50px 350px 70px 350px;
     background-color: #292929;
+    border-top: 4px solid #1f1f1f;
+    border-bottom: 4px solid #1f1f1f;
 }
 
 #content .sectionTitle {
@@ -83,17 +83,17 @@ main {
 }
 
 /* Skill Section */
-
 #skills .panel {
     grid-area: 1;
-    background-color: #464646;
+    background-color: #333333;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 3px solid #5b3563;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #skills .panel .header {
-    background: url("../imgs/panelHeaderBG.png");
+    background: url("../imgs/backgrounds/bg3.png") center; /* Experimenting */
     padding: 15px;
     margin: -40px 0px 15px 0px;
     border-radius: 10px;
@@ -103,8 +103,51 @@ main {
 
 #skills .panel .header h1 {font-size: 25px; font-weight: 400;}
 
-#skills .panel .content {
+/* Footer */
+footer {
+    padding: 20px 0px 40px 0px;
+    text-align: center;
 
+    /* Experimenting */
+    background: url("../imgs/footerBGDark.png") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+footer .contact .panel {
+    background-color: #464646;
+    border-radius: 15px;
+    width: 40%;
+}
+
+footer .info {
+    margin: 10px 0px 20px 0px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+footer .info span {
+    font-size: 20px;
+}
+
+footer .icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 0px 10px 0px 10px;
+    transition: .2s all;
+}
+
+footer .icons a:hover {
+    color: gray;
 }
 
 /* Responsive */
